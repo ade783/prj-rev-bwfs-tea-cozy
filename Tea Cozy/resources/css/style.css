@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: seashell;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+}
+
+
+header nav {
+  padding-right: 40px;
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  height: 50px;
+  flex-grow: 1;
+}
+
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.main-content {
+  display: flex;
+  position: relative;
+  height: 700px;
+  width: 1200px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-size: cover;
+  margin: 0 auto 0 auto;
+}
+
+
+.main-content .text-content {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.second-content {
+  display: flex;
+  position: relative;
+  height: 700px;
+  width: 1000px;
+  background-size: cover;
+  margin: 40px auto 0px auto;
+}
+
+
+.second-content .text-content {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.row {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 140px;
+  justify-content: space-between;
+  padding-bottom: 100%;
+}
+
+.berry, .rum, .donut, .myrtle, .bizarre {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.berry img, .rum img, .donut img, .myrtle img, .bizarre img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  height: 500px;
+  margin: 20px auto 10px auto;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  justify-content: center;
+  align-items: center;
+}
+
+.locations {
+  text-align: center;
+  margin-top: 0;
+}
+
+ .downtown, .bayside, .oakdale {
+  display: block;
+  justify-content: space-around;
+  width: 300px;
+  opacity: 1;
+  float: left;
+}
+
+footer {
+  text-align: center;
+}
+
+footer h5 {
+  margin-bottom: 10px;
+}
+
+footer p{
+  text-align: left;
+  padding-left: 20px;
+}
